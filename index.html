@@ -20,15 +20,15 @@
     </svg>
 
     <svg style="display: none;">
-        <symbol id="E-intro" width="596" height="769" viewBox="0 0 596 769">
+        <symbol id="E-intro" viewBox="0 0 596 769">
             <g>
                 <path opacity="0.03" d="M595.085 625.827V768.56H0V0H580.812V142.733H176.769V309.62H453.6V447.961H176.769V625.827H595.085Z" fill="white"/>
             </g>
         </symbol>
     </svg>
-
+    
     <svg style="display: none;">
-        <symbol id="shopping_cart" width="19" height="20" viewBox="0 0 19 20">
+        <symbol id="shopping_cart" viewBox="0 0 19 20">
             <g>
                 <path d="M5.66667 15.6297C4.62778 15.6297 3.77778 16.4797 3.77778 17.5186C3.77778 18.5574 4.62778 19.4074 5.66667 19.4074C6.70556 19.4074 7.55556 18.5574 7.55556 17.5186C7.55556 16.4797 6.70556 15.6297 5.66667 15.6297ZM0 0.518555V2.40744H1.88889L5.28889 9.58522L3.96667 11.8519C3.87222 12.1352 3.77778 12.513 3.77778 12.7963C3.77778 13.8352 4.62778 14.6852 5.66667 14.6852H17V12.7963H6.04444C5.95 12.7963 5.85556 12.7019 5.85556 12.6074V12.513L6.70556 10.9074H13.6944C14.45 10.9074 15.0167 10.5296 15.3 9.96296L18.7 3.82411C18.8889 3.63522 18.8889 3.54078 18.8889 3.35189C18.8889 2.78522 18.5111 2.40744 17.9444 2.40744H3.96667L3.11667 0.518555H0ZM15.1111 15.6297C14.0722 15.6297 13.2222 16.4797 13.2222 17.5186C13.2222 18.5574 14.0722 19.4074 15.1111 19.4074C16.15 19.4074 17 18.5574 17 17.5186C17 16.4797 16.15 15.6297 15.1111 15.6297Z" fill="#FF834E"/>
             </g>
@@ -62,19 +62,57 @@
     </header> <!--/header-->
 
     <!-- intro -->
-    <section class="intro">
-        <div class="intro__inner">
-            <h1>
-                Интернет-магазин принесет вам максимум прибыли!
-            </h1>
-            <p>
-                Рассказываем что такое интернет магазин и зачем это нужно.
-            </p>
-            <div class="intro__img"></div>
-            <div class="intro__img2"></div>
+    <section class="intro bgblur">
+        <div class="container">
+            <div class="intro__inner">
+                <div class="wrapper">
+                        
+                    <h2 class="intro-small-icon">
+                        <svg class="shop-cart-svg">
+                            <use xlink:href="#shopping_cart"></use>
+                        </svg>
+                        <p class="intro-small-icon__text">E-commerce</p> 
+                    </h2>
+                
+                    <!--  -->
+                    <h1 class="intro-title">
+                        Интернет-магазин принесет вам максимум прибыли!
+                    </h1>
+                    <p class="intro-subtitle">
+                        Рассказываем что такое интернет магазин и зачем это нужно.
+                    </p>
+
+                    <!--  -->
+                    <span>Ответим на любой вопрос</span>
+                    <a class="button" href="#">
+                        <span>Выйти на связь</span>
+                        <svg class="btn-arrow" width="62" height="65" viewBox="0 0 62 65" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="62" height="65" fill="#DE774B"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M30.1673 25.282C29.8911 25.282 29.6673 25.0582 29.6673 24.782C29.6673 24.5059 29.8911 24.282 30.1673 24.282L38.444 24.282C38.6087 24.282 38.7547 24.3616 38.8458 24.4845C38.9687 24.5756 39.0483 24.7216 39.0483 24.8863L39.0483 33.163C39.0483 33.4392 38.8244 33.663 38.5483 33.663C38.2721 33.663 38.0483 33.4392 38.0483 33.163V25.8006L23.1569 40.692C22.9616 40.8873 22.6451 40.8873 22.4498 40.692C22.2545 40.4967 22.2545 40.1801 22.4498 39.9849L37.1526 25.282L30.1673 25.282Z" fill="white"/>
+                        </svg>
+                    </a>
+
+                </div>
+
+                <div class="wrapper-2">
+                    <svg class="e-intro-svg">
+                        <use xlink:href="#E-intro"></use>
+                    </svg>
+                    <img class="mockup" src="./images/mockup.png" alt="mockup">
+                    
+                
+                
+                </div>                
+            </div>
         </div>
-        <div class="intro__shadow__bottom">
-        </div>
+        
+        <!-- <div class="intro__shadow__bottom"></div> -->
+
     </section> <!--/Intro-->
+
+    <!-- How we work -->
+    <section class="how-we-work">
+        <h1 class="how-we-work_title">как мы работаем над вашим проектом</h1>
+    </section><!-- /How we work -->
 </body>
 </html>

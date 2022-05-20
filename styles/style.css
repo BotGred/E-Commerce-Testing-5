@@ -72,9 +72,9 @@ p, span, h1 {
     fill: #ffffff;
 }
 
-.call {
+/* .call {
     
-}
+} */
 
 
 .btn {
@@ -122,8 +122,8 @@ p, span, h1 {
     display: flex;
     width: 100%;
     max-width: 1920px;
-    height: 100vh;
-    max-height: 1060px;
+    height: 1060px;
+    min-height: 100vh;
     background-color: #161616;
     background-size: cover;
     background-image: url(../images/intro.png);
@@ -228,12 +228,13 @@ h1 {
     text-decoration: none;
     background-color: #ff834e;
     margin-top: 15px;
+    z-index: 100;
     
 }
 
-.btn-arrow {
+/* .btn-arrow {
     
-}
+} */
 
 .button > span {
     font-size: 18px;
@@ -282,9 +283,24 @@ h1 {
     background: radial-gradient(199.83% 125.68% at 50% -33.36%, rgba(23, 23, 24, 0) 0%, rgba(23, 23, 24, 0) 65%, rgba(23, 23, 24, 0.773497) 80.79%, #171718 86.68%, rgba(23, 23, 24, 0.13) 95.33%);
 }
 
+.fade {
+    position: absolute;
+    width: 1920px;
+    height: 586px;
+    left: 0px;
+    top: 719px;
+
+    background: radial-gradient(199.83% 125.68% at 50% -33.36%, rgba(23, 23, 24, 0) 0%, rgba(23, 23, 24, 0) 65%, rgba(23, 23, 24, 0.773497) 80.79%, #171718 86.68%, rgba(23, 23, 24, 0.13) 95.33%);
+}
+
+/* How we work */
+
 .how-we-work {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+
     width: 100%;
     max-width: 1920px;
     height: 1060px;
@@ -295,6 +311,17 @@ h1 {
     background-repeat: no-repeat;
 }
 
+.path-bg-work {
+    margin-top: 125px;
+
+    width: 1400px;
+    height: 509px;
+
+    background-position: center;
+    background-image: url(../images/path-bg-work.png);
+    background-repeat: no-repeat;
+}
+
 
 .how-we-work_title {
     text-align: center;
@@ -302,5 +329,54 @@ h1 {
     font-size: 26px;
     font-weight: 400;
 
-    margin-top: 90px;
+    /* margin-top: 90px; */
+    z-index: 100;
 }
+
+items {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    height: 250px;
+    background-color: #222;
+    
+}
+
+items:hover two {
+    width: 75px;
+    height: 75px;
+    background-image: url(../images/card-1.svg);
+}
+
+items:hover one {
+    background-color: #fff;
+    border: none;
+}
+
+one {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 180px;
+    height: 180px;
+
+    background-color: #1D1D1D;
+    border: 0.5px solid #DBDBDB;
+    border-radius: 50%;
+
+    transition: background 0.1s linear, border 0.1s linear;
+}
+
+two {
+    width: 81px;
+    height: 81px;
+    
+    background-image: url(../images/card-1-2.svg);
+    background-repeat: no-repeat;
+    /* z-index: 1; */
+    transition: background 0.1s linear;
+}
+
+
